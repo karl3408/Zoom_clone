@@ -18,9 +18,9 @@ app.get("/", (req, res) => res.render("home"));
 
 console.log("hello");
 
-// ✅ 서버 + WebSocket 설정 (WebSocket은 아직 안 쓰고 있음)
-const server = http.createServer(app);
-// const wss = new WebSocketServer({ server }); // 나중에 사용 가능
 
-const handleListen = () => console.log(`✅ Listening on http://localhost:3000`);
+const server = http.createServer(app);
+
+
+const handleListen = () => console.log(`Listening on http://localhost:3000`);
 server.listen(3000, handleListen);
